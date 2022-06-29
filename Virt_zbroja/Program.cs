@@ -14,6 +14,10 @@ namespace Virt_zbroja
            foreach(Voin V in Voiny)
             {
                 V.Print();
+              //  V.Life(Zachyst_broni, Zdorovia_voina);
+                V.Demage_luk();
+                V.Demage_pulia();
+                V.Demage_knife();
             }
         }
     }

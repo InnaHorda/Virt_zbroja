@@ -19,10 +19,33 @@ namespace Virt_zbroja
             Console.WriteLine("Здоровя воiна: " + Zdorovia_voina);
             float life = Life(Zdorovia_voina, Zachyst_broni);
             Console.WriteLine("Life: " + life);
-            float demaga1 = Demage_luk(life);
-            Console.WriteLine("Удар вiд лука: " + demaga1);
-            float demaga2 = Demage_pulia(life);
-            Console.WriteLine("Удар вiд : " + demaga2);
+
+        }
+        public override void Demage_luk()
+        {
+            base.Demage_luk();
+            float demaga1 = 30f;
+            float d = 0.6f;
+            float dem = demaga1 - (demaga1 * d);
+            Console.WriteLine("Удар вiд лука: " + dem);
+
+        }
+        public override void Demage_pulia()
+        {
+            base.Demage_pulia();
+            float demaga2 = 50f;
+            float d = 0.6f;
+            float dem2 = demaga2 - (demaga2 * d);
+            Console.WriteLine("Удар вiд куля: " + dem2);
+        }
+        public override void Demage_knife()
+        {
+            base.Demage_knife();
+            float demaga3 = 60f;
+            float d = 0.7f;
+            float dem3 = demaga3 - (demaga3 * d);
+            Console.WriteLine("Удар вiд ножа: " + dem3);
+
         }
     }
 }
