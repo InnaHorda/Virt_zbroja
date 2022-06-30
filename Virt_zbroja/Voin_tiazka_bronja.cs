@@ -19,32 +19,39 @@ namespace Virt_zbroja
             Console.WriteLine("Здоровя воiна: " + Zdorovia_voina);
             float life = Life(Zdorovia_voina, Zachyst_broni);
             Console.WriteLine("Life: " + life);
+            Console.WriteLine();
 
         }
         public override void Demage_luk()
         {
             base.Demage_luk();
-            float demaga1 = 30f;
+            float demaga = 30f;
             float d = 0.6f;
-            float dem = demaga1 - (demaga1 * d);
-            Console.WriteLine("Удар вiд лука: " + dem);
+            float f = Hit(demaga, d);
+            Console.WriteLine("Удар вiд лука: " + f);
+            float t = Died1(Zdorovia_voina, Zachyst_broni, demaga, d);
+            Console.WriteLine("Пiсля " + t + " влучань воин помре");
 
         }
         public override void Demage_pulia()
         {
             base.Demage_pulia();
-            float demaga2 = 50f;
+            float demaga = 50f;
             float d = 0.6f;
-            float dem2 = demaga2 - (demaga2 * d);
-            Console.WriteLine("Удар вiд куля: " + dem2);
+            float f = Hit(demaga, d);
+            Console.WriteLine("Удар вiд куля: " + f);
+            float t = Died1(Zdorovia_voina, Zachyst_broni, demaga, d);
+            Console.WriteLine("Пiсля " + t + " влучань воин помре");
         }
         public override void Demage_knife()
         {
             base.Demage_knife();
-            float demaga3 = 60f;
+            float demaga = 60f;
             float d = 0.7f;
-            float dem3 = demaga3 - (demaga3 * d);
-            Console.WriteLine("Удар вiд ножа: " + dem3);
+            float f = Hit(demaga, d);
+            Console.WriteLine("Удар вiд ножа: " + f);
+            float t = Died1(Zdorovia_voina, Zachyst_broni, demaga, d);
+            Console.WriteLine("Пiсля " + t + " влучань воин помре");
 
         }
     }

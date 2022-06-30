@@ -18,6 +18,7 @@ namespace Virt_zbroja
                 V.Demage_luk();
                 V.Demage_pulia();
                 V.Demage_knife();
+  
             }
         }
     }
