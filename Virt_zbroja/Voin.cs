@@ -17,7 +17,7 @@ namespace Virt_zbroja
         public virtual void Print()
         {
             Console.WriteLine();
-            Console.WriteLine("Воiн  : " + Nazwa_voina);
+            Console.WriteLine("Воiн: " + Nazwa_voina);
             
         }
         public virtual void Damega()
