@@ -7,7 +7,7 @@ namespace Virt_zbroja
     class Voin_tiazka_bronja:Voin
     {
         
-        public Voin_tiazka_bronja( string Nazwa_voina, float HP) : base(Nazwa_voina,HP)
+        public Voin_tiazka_bronja( string Nazwa_voina, float HP,float Kof,float Add_life) : base(Nazwa_voina,HP,Kof,Add_life)
         {
            
         }
@@ -17,6 +17,10 @@ namespace Virt_zbroja
             
 
         }
-      
+        public override void Damega()
+        {
+            base.Damega();
+        }
+
     }
 }
